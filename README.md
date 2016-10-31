@@ -14,6 +14,7 @@ Use cases for Pub/Sub API:
 
 The Pub/Sub implementation separates the concepts of topic and subscription, only one of them will receive a message.  
  * []() Topics - represent the pub-sub aspect of the system: if multiple subscribers subscribe to the same topic, each of them    will receive a copy of the message published to the topic.
+ * Subscriptions represent the competing consumers aspect of the system: if multiple subscribers pull messages from the same      subscription, only one of them will receive the message.
  
 ### REST API
 
