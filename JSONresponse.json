@@ -1,0 +1,10 @@
+{
+ "subscriptions": [
+   {
+     "name": "projects/clarapubsub/subscriptions/mysubscription",
+     "topic": "projects/clarapubsub/topics/sometopic",
+     "pushConfig": { },
+     "ackDeadlineSeconds": 60
+   }
+ ]
+}
