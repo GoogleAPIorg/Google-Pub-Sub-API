@@ -36,3 +36,12 @@ Messaging - One application publishes a message to a common message channel.  Ot
 
 Remote Procedure Invocation - One application exposes some of its functionality so that it can be accessed remotely by other applications as a remote procedure.  The communication occurs in real time and synchronously.
 
+A message is transmitted in five steps:
+ * 1. Create - The sender creates the message and populates it with data.
+ * 2. Send - The sender adds the message to a channel.
+ * 3. Deliver - The messaging system moves the message from the sender's computer to the receiver's computer, making it           available to the receiver.
+ * 4. Receive - The receiver reads the message from the channel.
+ * 5. Process - The receiver extracts the data from the message.
+ 
+Sending data to another computer is more complicated and requires data to be copied from one computer to another.  This means that objects have to be "serialized" - they can be converted into a simple byte stream that can be sent across the network.  Messaging takes care of this conversion so that the applications do not have to worry about it.
+
