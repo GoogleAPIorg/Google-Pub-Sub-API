@@ -13,7 +13,7 @@ Use cases for Pub/Sub API:
 ### Topics and Subscriptions
 
 The Pub/Sub implementation separates the concepts of topic and subscription, only one of them will receive a message.  
- * []()
+ * []() Topics - represents 
  
 ### REST API
 
