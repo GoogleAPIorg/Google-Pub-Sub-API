@@ -28,3 +28,9 @@ The Pub/Sub implementation separates the concepts of topic and subscription, onl
 
 Channels - Messaging applications transmit data through a Message Channel, a virtual pipe that connects a sender to a receiver.
 
+Messages - A Message is an atomic packet of data that can be transmitted on a channel.  To transmit data, a message must break the data into one or more packets, wrap each packet as a message, and then send the message on a channel.  A receiver application receives a message and must extract the data from the message to process it.  The message system will try repeatedly to deliver the message until it succeeds.
+
+Pipe and Filters - 
+
+Messaging - One application publishes a message to a common message channel.  Other applications can read the message from the channel at a later time.  The applications must agree on a channel as well as on the format of the message.  The communication is asyncronous.
+
