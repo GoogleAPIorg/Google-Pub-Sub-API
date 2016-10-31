@@ -63,3 +63,6 @@ A message is transmitted in five steps:
  
 Sending data to another computer is more complicated and requires data to be copied from one computer to another.  This means that objects have to be "serialized" - they can be converted into a simple byte stream that can be sent across the network.  Messaging takes care of this conversion so that the applications do not have to worry about it.
 
+### Notes
+
+Coupling - 
