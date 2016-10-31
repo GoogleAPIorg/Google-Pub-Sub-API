@@ -21,7 +21,22 @@ The Pub/Sub implementation separates the concepts of topic and subscription, onl
  
 ### REST API
 
- * Cloud Pub/Sub is accessed through a set of REST APIs.  Resource names for topics and subscriptions must follow the 
+ * Cloud Pub/Sub is accessed through a set of REST APIs.  Resource names for topics and subscriptions must follow the following format: projects/project-identifier/collection/resource-name where collection can be topics or subscription.  Following this scheme, listing defined subscriptions can be as simple as making the following REST call, assuming you have authenticated via OAuth and your app is called clarapubsub:
+ 
+GET https://pubsub.googleapis.com/v1beta2/projects/clarapubsub/subscriptions
+
+The response is in JSON structure:
+
+{
+ "subscriptions": [
+   {
+     "name": "projects/clarapubsub/subscriptions/mysubscription",
+     "topic": "projects/clarapubsub/topics/sometopic",
+     "pushConfig": { },
+     "ackDeadlineSeconds": 60
+   }
+ ]
+}
 
 
 ### Messaging Systems (Message-oriented Middleware)
