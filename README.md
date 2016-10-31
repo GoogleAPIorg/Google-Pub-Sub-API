@@ -16,6 +16,15 @@ The Pub/Sub implementation separates the concepts of topic and subscription, onl
  * []() Topics - represent the pub-sub aspect of the system: if multiple subscribers subscribe to the same topic, each of them    will receive a copy of the message published to the topic.
  * Subscriptions represent the competing consumers aspect of the system: if multiple subscribers pull messages from the same      subscription, only one of them will receive the message.
  
+ Separating topics and messages is a way to provide both Publish-Subscribe Channel and Point-to-Point Channel semantics through a single API.  
+ 
+ 
 ### REST API
 
  * Cloud Pub/Sub is accessed through a set of REST APIs.  Resource names for topics and subscriptions must follow the 
+
+
+### Messaging Systems
+
+Channels - Messaging applications transmit data through a Message Channel, a virtual pipe that connects a sender to a receiver.
+
